@@ -9,11 +9,19 @@
     
     <title>Random exercise Javascript</title>
 </head>
-<body style="width: 100%; height: 100vh" class="bg-secondary d-flex justify-content-center align-items-center">
+<body style="width: 100%; height: 100vh" class="bg-secondary d-flex flex-column justify-content-center align-items-center">
 
-    <div style="box-shadow: 1px 5px 20px 10px rgba(1,1,1,0.5)" class="container bg-light justify-content-center align-items-center d-flex flex-column border rounded p-4">
+    <div style="background-color: rgba(255,255,255,0.8); box-shadow: 1px 5px 20px 10px rgba(1,1,1,0.5)" class="container justify-content-center align-items-center d-flex flex-column border rounded p-4">
         <h4 class="text-secondary">Test</h4>
         <p class="text-dark" id="textWord">...</p>
+        <input type="text" class="form-control" id="inputlist">
+        <div class="d-flex">
+            <button class="btn mx-2 btn-dark my-3" id="btns">Add to list</button>
+            <button class="btn mx-2 btn-dark my-3" id="cls">Clear</button>
+        </div>
+        <div class="d-flex" id="lists">
+
+        </div>
     </div>
     
     

@@ -108,4 +108,38 @@ const sliceArray = slice5.slice(1,4);
 console.log(sliceArray);
 textWord.textContent = sliceArray
 
-// string.trim()
+// have no idea how trim() used for 
+// string.trim() 
+// remove automatically both left and right whitespace
+const trim1 = 'dr haji ali bin abu bakar';
+const trimString = trim1.trim();
+console.log(trimString);
+
+
+
+// todo list
+
+const inputlist = document.getElementById('inputlist');
+const btns = document.getElementById('btns');
+const listsContainer = document.getElementById('lists');
+const cls = document.getElementById('cls');
+
+btns.addEventListener('click', function(){
+    let createParagraph = document.createElement('button');
+    createParagraph.textContent = inputlist.value;
+    createParagraph.style.display = 'inline-block';
+    createParagraph.style.marginRight = '3px';
+    createParagraph.style.border = '1px solid black';
+    createParagraph.style.borderRadius = '7px';
+
+    listsContainer.appendChild(createParagraph);
+    
+})
+
+
+
+cls.addEventListener('click', function(){
+    if(inputlist.value !== ''){
+        inputlist.value = ''
+    }
+})
