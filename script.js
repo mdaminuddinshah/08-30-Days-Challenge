@@ -103,4 +103,9 @@ const accessString = accessArray.slice(3, 8)
 console.log(accessString)
 
 
+const slice5 = ['number', 'password', 'id', 'key', 'data', 'code'];
+const sliceArray = slice5.slice(1,4);
+console.log(sliceArray);
+textWord.textContent = sliceArray
+
 // string.trim()
