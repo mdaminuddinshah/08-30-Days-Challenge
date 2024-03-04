@@ -74,6 +74,33 @@ textWord.textContent =filterArray5
 // string.slice()
 // create new array
 
+const slice1 = 'orange';
+const sliceString1 = slice1.slice(1);  // on left is ignore, 1 is included
+console.log(sliceString1)
+textWord.innerHTML = sliceString1
 
 
+const slice2 = 'suzy eat apple';
+const sliceString2 = slice2.slice(5);
+console.log(sliceString2);
+textWord.innerHTML = sliceString2
 
+
+const slice3 = 'fish is not swimming, they are walking';
+const sliceString3 = slice3.slice(0,20);
+const slicestring4 = slice3.slice(22, 38)
+console.log(sliceString3)
+console.log(slicestring4)
+
+
+const slice4 = [12, 34, 56, 78, 12];
+const accessArray = slice4.filter(tukarArray).toString()
+function tukarArray(tukar){
+    return tukar
+}
+
+const accessString = accessArray.slice(3, 8)
+console.log(accessString)
+
+
+// string.trim()
