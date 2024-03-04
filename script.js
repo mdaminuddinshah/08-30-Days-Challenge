@@ -22,3 +22,21 @@ const tukar4 = state3.split(' bin ', 3);
 console.log(tukar4)
 textWord.textContent = tukar4
 
+// array.filter()
+// create new array
+
+const array1 = [18, 16, 20, 23, 25, 30, 12, 10];
+const filterArray1 = array1.filter(checkAge)
+function checkAge(check){
+    return check > 18
+}
+console.log(filterArray1);
+textWord.textContent = filterArray1
+
+const array2 = [12,10,15,18,20,23,25,30,35,40];
+const filterArray2 = array2.filter(checkAge2)
+function checkAge2(age){
+    return age < 25
+}
+console.log(filterArray2)
+textWord.innerHTML = filterArray2
